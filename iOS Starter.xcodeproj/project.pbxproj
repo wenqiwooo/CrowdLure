@@ -253,7 +253,6 @@
 				TargetAttributes = {
 					2A1CF20E1D6B8460004B4D8F = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = WHQUYPT37U;
 						ProvisioningStyle = Automatic;
 					};
 					2A1CF2221D6B8460004B4D8F = {
@@ -595,11 +594,15 @@
 			baseConfigurationReference = CDAA2FDD22613921BFC5E360 /* Pods-iOS Starter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WHQUYPT37U;
 				INFOPLIST_FILE = "iOS Starter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wenqiwu.iOS-Starter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
@@ -609,11 +612,15 @@
 			baseConfigurationReference = 5FEEA1F206243A61673C6389 /* Pods-iOS Starter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WHQUYPT37U;
 				INFOPLIST_FILE = "iOS Starter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wenqiwu.iOS-Starter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
