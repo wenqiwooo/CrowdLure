@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppSettingsTableViewController: UITableViewController {
+class ProfileTableViewController: UITableViewController {
     
     init() {
         super.init(style: .Grouped)
@@ -20,7 +20,7 @@ class AppSettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Settings"
+        self.title = "Profile"
         self.setupTableView()
     }
     

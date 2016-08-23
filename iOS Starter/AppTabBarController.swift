@@ -20,12 +20,15 @@ class AppTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let appEventTableViewController = AppEventTableViewController()
-        appEventTableViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: ""), selectedImage: nil)
+        let discoverTableViewController = DiscoverNavigationController()
+        discoverTableViewController.tabBarItem = UITabBarItem(title: "Discover", image: UIImage(named: ""), selectedImage: nil)
         
-        let appSettingsTableViewController = AppSettingsTableViewController()
-        appSettingsTableViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: ""), selectedImage: nil)
+        let searchViewController = SearchNavigationController()
+        searchViewController.tabBarItem = UITabBarItem(title: "Search", image: UIImage(named: ""), selectedImage: nil)
         
-        self.setViewControllers([appEventTableViewController, appSettingsTableViewController], animated: false)
+        let profileTableViewController = ProfileNavigationController()
+        profileTableViewController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: ""), selectedImage: nil)
+        
+        self.setViewControllers([discoverTableViewController, searchViewController, profileTableViewController], animated: false)
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AppEventDataProvider {
+class DiscoverCellDataProvider {
     
     var title = "Title"
     var owner = "Owner"
@@ -20,5 +20,4 @@ class AppEventDataProvider {
     
     init() {
     }
-    
 }

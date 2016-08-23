@@ -14,10 +14,15 @@
 		2A1CF2281D6B8460004B4D8F /* iOS_StarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF2271D6B8460004B4D8F /* iOS_StarterTests.swift */; };
 		2A1CF2331D6B8460004B4D8F /* iOS_StarterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF2321D6B8460004B4D8F /* iOS_StarterUITests.swift */; };
 		2A1CF2471D6BC96F004B4D8F /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF2461D6BC96F004B4D8F /* AppTabBarController.swift */; };
-		2A1CF2491D6BCB53004B4D8F /* AppEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF2481D6BCB53004B4D8F /* AppEventTableViewController.swift */; };
-		2A1CF24B1D6BCE7D004B4D8F /* AppSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF24A1D6BCE7D004B4D8F /* AppSettingsTableViewController.swift */; };
-		2A1CF24D1D6BD428004B4D8F /* AppEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF24C1D6BD428004B4D8F /* AppEventTableViewCell.swift */; };
-		2A1CF24F1D6BD54D004B4D8F /* AppEventDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF24E1D6BD54D004B4D8F /* AppEventDataProvider.swift */; };
+		2A1CF2491D6BCB53004B4D8F /* DiscoverListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF2481D6BCB53004B4D8F /* DiscoverListViewController.swift */; };
+		2A1CF24B1D6BCE7D004B4D8F /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF24A1D6BCE7D004B4D8F /* ProfileTableViewController.swift */; };
+		2A1CF24D1D6BD428004B4D8F /* DiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF24C1D6BD428004B4D8F /* DiscoverCell.swift */; };
+		2A1CF24F1D6BD54D004B4D8F /* DiscoverCellDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF24E1D6BD54D004B4D8F /* DiscoverCellDataProvider.swift */; };
+		2A1CF2541D6C1C08004B4D8F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF2531D6C1C08004B4D8F /* SearchViewController.swift */; };
+		2A1CF2571D6C1CEA004B4D8F /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF2561D6C1CEA004B4D8F /* AppNavigationController.swift */; };
+		2A1CF2591D6C1D61004B4D8F /* DiscoverNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF2581D6C1D61004B4D8F /* DiscoverNavigationController.swift */; };
+		2A1CF25B1D6C1E79004B4D8F /* SearchNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF25A1D6C1E79004B4D8F /* SearchNavigationController.swift */; };
+		2A1CF25D1D6C1EC2004B4D8F /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF25C1D6C1EC2004B4D8F /* ProfileNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +56,15 @@
 		2A1CF2321D6B8460004B4D8F /* iOS_StarterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_StarterUITests.swift; sourceTree = "<group>"; };
 		2A1CF2341D6B8460004B4D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A1CF2461D6BC96F004B4D8F /* AppTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
-		2A1CF2481D6BCB53004B4D8F /* AppEventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEventTableViewController.swift; sourceTree = "<group>"; };
-		2A1CF24A1D6BCE7D004B4D8F /* AppSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsTableViewController.swift; sourceTree = "<group>"; };
-		2A1CF24C1D6BD428004B4D8F /* AppEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEventTableViewCell.swift; sourceTree = "<group>"; };
-		2A1CF24E1D6BD54D004B4D8F /* AppEventDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEventDataProvider.swift; sourceTree = "<group>"; };
+		2A1CF2481D6BCB53004B4D8F /* DiscoverListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverListViewController.swift; sourceTree = "<group>"; };
+		2A1CF24A1D6BCE7D004B4D8F /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		2A1CF24C1D6BD428004B4D8F /* DiscoverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverCell.swift; sourceTree = "<group>"; };
+		2A1CF24E1D6BD54D004B4D8F /* DiscoverCellDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverCellDataProvider.swift; sourceTree = "<group>"; };
+		2A1CF2531D6C1C08004B4D8F /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2A1CF2561D6C1CEA004B4D8F /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		2A1CF2581D6C1D61004B4D8F /* DiscoverNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverNavigationController.swift; sourceTree = "<group>"; };
+		2A1CF25A1D6C1E79004B4D8F /* SearchNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchNavigationController.swift; sourceTree = "<group>"; };
+		2A1CF25C1D6C1EC2004B4D8F /* ProfileNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +117,10 @@
 			children = (
 				2A1CF2121D6B8460004B4D8F /* AppDelegate.swift */,
 				2A1CF2461D6BC96F004B4D8F /* AppTabBarController.swift */,
-				2A1CF2481D6BCB53004B4D8F /* AppEventTableViewController.swift */,
-				2A1CF24C1D6BD428004B4D8F /* AppEventTableViewCell.swift */,
-				2A1CF24E1D6BD54D004B4D8F /* AppEventDataProvider.swift */,
-				2A1CF24A1D6BCE7D004B4D8F /* AppSettingsTableViewController.swift */,
+				2A1CF2561D6C1CEA004B4D8F /* AppNavigationController.swift */,
+				2A1CF2511D6C196C004B4D8F /* Discover */,
+				2A1CF2551D6C1C1D004B4D8F /* Search */,
+				2A1CF2521D6C1B6D004B4D8F /* Profile */,
 				2A1CF2141D6B8460004B4D8F /* ViewController.swift */,
 				2A1CF2191D6B8460004B4D8F /* Assets.xcassets */,
 				2A1CF21B1D6B8460004B4D8F /* LaunchScreen.storyboard */,
@@ -135,6 +145,35 @@
 				2A1CF2341D6B8460004B4D8F /* Info.plist */,
 			);
 			path = "iOS StarterUITests";
+			sourceTree = "<group>";
+		};
+		2A1CF2511D6C196C004B4D8F /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				2A1CF2581D6C1D61004B4D8F /* DiscoverNavigationController.swift */,
+				2A1CF2481D6BCB53004B4D8F /* DiscoverListViewController.swift */,
+				2A1CF24C1D6BD428004B4D8F /* DiscoverCell.swift */,
+				2A1CF24E1D6BD54D004B4D8F /* DiscoverCellDataProvider.swift */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		2A1CF2521D6C1B6D004B4D8F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2A1CF25C1D6C1EC2004B4D8F /* ProfileNavigationController.swift */,
+				2A1CF24A1D6BCE7D004B4D8F /* ProfileTableViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		2A1CF2551D6C1C1D004B4D8F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2A1CF25A1D6C1E79004B4D8F /* SearchNavigationController.swift */,
+				2A1CF2531D6C1C08004B4D8F /* SearchViewController.swift */,
+			);
+			name = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,13 +312,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A1CF24F1D6BD54D004B4D8F /* AppEventDataProvider.swift in Sources */,
-				2A1CF24B1D6BCE7D004B4D8F /* AppSettingsTableViewController.swift in Sources */,
+				2A1CF2571D6C1CEA004B4D8F /* AppNavigationController.swift in Sources */,
+				2A1CF24F1D6BD54D004B4D8F /* DiscoverCellDataProvider.swift in Sources */,
+				2A1CF24B1D6BCE7D004B4D8F /* ProfileTableViewController.swift in Sources */,
+				2A1CF2541D6C1C08004B4D8F /* SearchViewController.swift in Sources */,
 				2A1CF2471D6BC96F004B4D8F /* AppTabBarController.swift in Sources */,
 				2A1CF2151D6B8460004B4D8F /* ViewController.swift in Sources */,
-				2A1CF2491D6BCB53004B4D8F /* AppEventTableViewController.swift in Sources */,
-				2A1CF24D1D6BD428004B4D8F /* AppEventTableViewCell.swift in Sources */,
+				2A1CF2491D6BCB53004B4D8F /* DiscoverListViewController.swift in Sources */,
+				2A1CF25D1D6C1EC2004B4D8F /* ProfileNavigationController.swift in Sources */,
+				2A1CF24D1D6BD428004B4D8F /* DiscoverCell.swift in Sources */,
+				2A1CF2591D6C1D61004B4D8F /* DiscoverNavigationController.swift in Sources */,
 				2A1CF2131D6B8460004B4D8F /* AppDelegate.swift in Sources */,
+				2A1CF25B1D6C1E79004B4D8F /* SearchNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -410,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

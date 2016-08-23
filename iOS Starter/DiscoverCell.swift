@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppEventTableViewCell: UITableViewCell {
+class DiscoverTableViewCell: UITableViewCell {
     
     var title: String
     var owner: String
@@ -18,10 +18,10 @@ class AppEventTableViewCell: UITableViewCell {
     var currentCount: Int
     var totalCount: Int
     
-    var dataProvider: AppEventDataProvider
+    var dataProvider: DiscoverCellDataProvider
     
     init() {
-        self.dataProvider = AppEventDataProvider()
+        self.dataProvider = DiscoverCellDataProvider()
         self.title = self.dataProvider.title
         self.owner = self.dataProvider.owner
         self.mainDesc = self.dataProvider.mainDesc
