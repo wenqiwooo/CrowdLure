@@ -10,6 +10,8 @@ target 'iOS Starter' do
   pod 'Alamofire', '~> 3.4'
   # JSON wrapper
   pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+  # TabScrollView
+  pod 'ACTabScrollView', :git => 'https://github.com/azurechen/ACTabScrollView.git'
 
   target 'iOS StarterTests' do
     inherit! :search_paths
