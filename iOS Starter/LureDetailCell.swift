@@ -42,7 +42,7 @@ class LureDetailCell: UITableViewCell {
         self.dateLabel.numberOfLines = 0
         self.dateLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        self.descLabel.text = "Too cultivated use solicitude frequently. Dashwood likewise up consider continue entrance ladyship oh. Wrong guest given purse power is no. Friendship to connection an am considered difficulty. Country met pursuit lasting moments why calling certain the. Middletons boisterous our way understood law. Among state cease how and sight since shall. Material did pleasure breeding our humanity she contempt had. So ye really mutual no cousin piqued summer result. Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh."
+        self.descLabel.text = "Too cultivated use solicitude frequently. Dashwood likewise up consider continue entrance ladyship oh. Wrong guest given purse power is no. Friendship to connection an am considered difficulty. Country met pursuit lasting moments why calling certain the. Middletons boisterous our way understood law."
         self.descLabel.sizeToFit()
         self.descLabel.font = UIFont.systemFontOfSize(14)
         self.descLabel.numberOfLines = 0

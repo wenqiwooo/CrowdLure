@@ -90,7 +90,7 @@ class DiscoverListViewController: UIViewController, UITableViewDelegate, UITable
     
     // MARK: ACTabScrollViewDataSource
     func numberOfPagesInTabScrollView(tabScrollView: ACTabScrollView) -> Int {
-        return 3
+        return 4
     }
     
     func tabScrollView(tabScrollView: ACTabScrollView, tabViewForPageAtIndex index: Int) -> UIView {
@@ -98,10 +98,12 @@ class DiscoverListViewController: UIViewController, UITableViewDelegate, UITable
         let label = UILabel()
         switch index {
         case 0:
-            label.text = DiscoverCategory.Nearby.rawValue
+            label.text = DiscoverCategory.Polls.rawValue
         case 1:
             label.text = DiscoverCategory.Popular.rawValue
         case 2:
+            label.text = DiscoverCategory.Nearby.rawValue
+        case 3:
             label.text = DiscoverCategory.Favorites.rawValue
         default:
             break
@@ -121,10 +123,12 @@ class DiscoverListViewController: UIViewController, UITableViewDelegate, UITable
         
         switch (index) {
         case 0:
-            discoverTableView = DiscoverTableView(category: .Nearby)
+            discoverTableView = DiscoverTableView(category: .Polls)
         case 1:
             discoverTableView = DiscoverTableView(category: .Popular)
         case 2:
+            discoverTableView = DiscoverTableView(category: .Nearby)
+        case 3:
             discoverTableView = DiscoverTableView(category: .Favorites)
         default:
             break
@@ -136,6 +140,16 @@ class DiscoverListViewController: UIViewController, UITableViewDelegate, UITable
         return discoverTableView
     }
     
+    
+    // MARK: TableView
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 8.0
+    }
+    
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 8.0
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         if let discoverTableView = tableView as? DiscoverTableView {
             switch (discoverTableView.category) {
@@ -145,6 +159,8 @@ class DiscoverListViewController: UIViewController, UITableViewDelegate, UITable
                 return 2
             case .Favorites:
                 return 3
+            case .Polls:
+                return 1
             }
         }
         return 0
@@ -167,6 +183,8 @@ class DiscoverListViewController: UIViewController, UITableViewDelegate, UITable
                 break
             case .Favorites:
                 break
+            case .Polls:
+                break
             }
         }
         return DiscoverCell()
@@ -182,9 +200,12 @@ class DiscoverListViewController: UIViewController, UITableViewDelegate, UITable
                 break
             case .Favorites:
                 break
+            case .Polls:
+                break
             }
             let vc = LureDetailViewController()
-            self.presentModalView(vc)
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

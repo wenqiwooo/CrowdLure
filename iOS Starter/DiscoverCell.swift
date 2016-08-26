@@ -199,8 +199,6 @@ class DiscoverCell: UITableViewCell {
         allConstraints += mainYConstraints
         
         NSLayoutConstraint.activateConstraints(allConstraints)
-        
-        print("LAYOUT SEt")
     }
     
 }

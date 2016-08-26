@@ -76,6 +76,14 @@ class LureDetailViewController: UIViewController, UITableViewDataSource, UITable
     
     // MARK: TableView
     
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 5.0
+    }
+    
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 5.0
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
     }

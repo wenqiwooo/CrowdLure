@@ -12,6 +12,8 @@ class AppTabBarController: UITabBarController {
     
     init() {
         super.init(nibName: nil, bundle: nil)
+        self.tabBar.autoresizesSubviews = false
+        self.tabBar.clipsToBounds = true
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -20,15 +22,18 @@ class AppTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let discoverTableViewController = DiscoverNavigationController()
-        discoverTableViewController.tabBarItem = UITabBarItem(title: "Discover", image: UIImage(named: ""), selectedImage: nil)
+        let discoverNC = DiscoverNavigationController()
+        discoverNC.tabBarItem = UITabBarItem(title: "Discover", image: UIImage(named: "discover.png"), selectedImage: nil)
         
-        let searchViewController = SearchNavigationController()
-        searchViewController.tabBarItem = UITabBarItem(title: "Search", image: UIImage(named: ""), selectedImage: nil)
+        let searchNC = SearchNavigationController()
+        searchNC.tabBarItem = UITabBarItem(title: "Search", image: UIImage(named: "search.png"), selectedImage: nil)
         
-        let profileTableViewController = ProfileNavigationController()
-        profileTableViewController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: ""), selectedImage: nil)
+        let purchaseNC = PurchaseNavigationController()
+        purchaseNC.tabBarItem = UITabBarItem(title: "Purchases", image: UIImage(named: "purchases.png"), selectedImage: nil)
         
-        self.setViewControllers([discoverTableViewController, searchViewController, profileTableViewController], animated: false)
+        let profileNC = ProfileNavigationController()
+        profileNC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "profile.png"), selectedImage: nil)
+        
+        self.setViewControllers([discoverNC, searchNC, purchaseNC, profileNC], animated: false)
     }
 }

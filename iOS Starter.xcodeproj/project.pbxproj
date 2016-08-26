@@ -24,16 +24,30 @@
 		2A1CF2591D6C1D61004B4D8F /* DiscoverNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF2581D6C1D61004B4D8F /* DiscoverNavigationController.swift */; };
 		2A1CF25B1D6C1E79004B4D8F /* SearchNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF25A1D6C1E79004B4D8F /* SearchNavigationController.swift */; };
 		2A1CF25D1D6C1EC2004B4D8F /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CF25C1D6C1EC2004B4D8F /* ProfileNavigationController.swift */; };
+		2A348EBD1D70134600D9BAA9 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A348EBC1D70134600D9BAA9 /* ProfileHeaderView.swift */; };
 		2A36F5BF1D6DA6C500BD6739 /* LureDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36F5BE1D6DA6C500BD6739 /* LureDetailCell.swift */; };
 		2A36F5C11D6DA6CE00BD6739 /* LureLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36F5C01D6DA6CE00BD6739 /* LureLocationCell.swift */; };
 		2A36F5C31D6DABA200BD6739 /* LureTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36F5C21D6DABA200BD6739 /* LureTableView.swift */; };
 		2A4DFF371D6C2E5A008FE51F /* ACTabScrollView+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DFF361D6C2E5A008FE51F /* ACTabScrollView+Protocol.swift */; };
 		2A4DFF391D6C2E7E008FE51F /* ACTabScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DFF381D6C2E7E008FE51F /* ACTabScrollView.swift */; };
+		2A7E3F961D6FBA400089264E /* PurchaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E3F951D6FBA400089264E /* PurchaseDetailViewController.swift */; };
 		2A91AD251D6C364700850321 /* DiscoverTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91AD241D6C364700850321 /* DiscoverTabView.swift */; };
 		2A96D6261D6D754D008C8E4D /* DiscoverTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A96D6251D6D754D008C8E4D /* DiscoverTableView.swift */; };
 		2A96D6281D6D7D16008C8E4D /* club.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A96D6271D6D7D16008C8E4D /* club.jpg */; };
 		2A96D62D1D6D947E008C8E4D /* LureDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A96D62C1D6D947E008C8E4D /* LureDetailViewController.swift */; };
 		2A96D6301D6D964E008C8E4D /* ModalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A96D62F1D6D964E008C8E4D /* ModalNavigationController.swift */; };
+		2AB156001D6F951E00342D2C /* CategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB155FF1D6F951E00342D2C /* CategoryCollectionCell.swift */; };
+		2AB156021D6F9CB900342D2C /* restaurants.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AB156011D6F9CB900342D2C /* restaurants.jpg */; };
+		2AB156081D6FA2AD00342D2C /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB156071D6FA2AD00342D2C /* SearchTableCell.swift */; };
+		2AB1560A1D6FADE000342D2C /* PurchaseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB156091D6FADE000342D2C /* PurchaseListViewController.swift */; };
+		2AB1560D1D6FB0A000342D2C /* PurchaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1560C1D6FB0A000342D2C /* PurchaseNavigationController.swift */; };
+		2AB1560F1D6FB14500342D2C /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1560E1D6FB14500342D2C /* PurchaseCell.swift */; };
+		2AC5EC1D1D701C6B0054A582 /* ProfileSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC5EC1C1D701C6B0054A582 /* ProfileSettingCell.swift */; };
+		2AC5EC281D70223C0054A582 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AC5EC271D70223C0054A582 /* profile@2x.png */; };
+		2AC5EC2A1D7022400054A582 /* purchases@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AC5EC291D7022400054A582 /* purchases@2x.png */; };
+		2AC5EC2C1D7022450054A582 /* discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AC5EC2B1D7022450054A582 /* discover@2x.png */; };
+		2AC5EC2E1D70224B0054A582 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AC5EC2D1D70224B0054A582 /* search@2x.png */; };
+		2AD1F3D81D6EB2FA009C2AA0 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD1F3D71D6EB2FA009C2AA0 /* SearchResultsController.swift */; };
 		72E25387698953A63F84D3E0 /* Pods_iOS_StarterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2507375A4F5671ACDCAA172 /* Pods_iOS_StarterUITests.framework */; };
 		F8C8231F2C686E29ED6CA5AE /* Pods_iOS_StarterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EF532D1D184316E3B81D52 /* Pods_iOS_StarterTests.framework */; };
 /* End PBXBuildFile section */
@@ -79,16 +93,30 @@
 		2A1CF2581D6C1D61004B4D8F /* DiscoverNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverNavigationController.swift; sourceTree = "<group>"; };
 		2A1CF25A1D6C1E79004B4D8F /* SearchNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchNavigationController.swift; sourceTree = "<group>"; };
 		2A1CF25C1D6C1EC2004B4D8F /* ProfileNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
+		2A348EBC1D70134600D9BAA9 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		2A36F5BE1D6DA6C500BD6739 /* LureDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LureDetailCell.swift; sourceTree = "<group>"; };
 		2A36F5C01D6DA6CE00BD6739 /* LureLocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LureLocationCell.swift; sourceTree = "<group>"; };
 		2A36F5C21D6DABA200BD6739 /* LureTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LureTableView.swift; sourceTree = "<group>"; };
 		2A4DFF361D6C2E5A008FE51F /* ACTabScrollView+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ACTabScrollView+Protocol.swift"; sourceTree = "<group>"; };
 		2A4DFF381D6C2E7E008FE51F /* ACTabScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACTabScrollView.swift; sourceTree = "<group>"; };
+		2A7E3F951D6FBA400089264E /* PurchaseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseDetailViewController.swift; sourceTree = "<group>"; };
 		2A91AD241D6C364700850321 /* DiscoverTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTabView.swift; sourceTree = "<group>"; };
 		2A96D6251D6D754D008C8E4D /* DiscoverTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableView.swift; sourceTree = "<group>"; };
 		2A96D6271D6D7D16008C8E4D /* club.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = club.jpg; sourceTree = "<group>"; };
 		2A96D62C1D6D947E008C8E4D /* LureDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LureDetailViewController.swift; sourceTree = "<group>"; };
 		2A96D62F1D6D964E008C8E4D /* ModalNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNavigationController.swift; sourceTree = "<group>"; };
+		2AB155FF1D6F951E00342D2C /* CategoryCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionCell.swift; sourceTree = "<group>"; };
+		2AB156011D6F9CB900342D2C /* restaurants.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = restaurants.jpg; sourceTree = "<group>"; };
+		2AB156071D6FA2AD00342D2C /* SearchTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
+		2AB156091D6FADE000342D2C /* PurchaseListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseListViewController.swift; sourceTree = "<group>"; };
+		2AB1560C1D6FB0A000342D2C /* PurchaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseNavigationController.swift; sourceTree = "<group>"; };
+		2AB1560E1D6FB14500342D2C /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
+		2AC5EC1C1D701C6B0054A582 /* ProfileSettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettingCell.swift; sourceTree = "<group>"; };
+		2AC5EC271D70223C0054A582 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
+		2AC5EC291D7022400054A582 /* purchases@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purchases@2x.png"; sourceTree = "<group>"; };
+		2AC5EC2B1D7022450054A582 /* discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discover@2x.png"; sourceTree = "<group>"; };
+		2AC5EC2D1D70224B0054A582 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		2AD1F3D71D6EB2FA009C2AA0 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		31B628A7197899F47904D70B /* Pods-iOS Starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Starter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS Starter/Pods-iOS Starter.debug.xcconfig"; sourceTree = "<group>"; };
 		53DB2CE3B0E5B60BB54720BB /* Pods-iOS StarterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS StarterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS StarterUITests/Pods-iOS StarterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		666E6E5B96A83EE566F21DF6 /* Pods-iOS StarterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS StarterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS StarterUITests/Pods-iOS StarterUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,13 +200,14 @@
 				2A1CF2511D6C196C004B4D8F /* Discover */,
 				2A96D62E1D6D9483008C8E4D /* Lure */,
 				2A1CF2551D6C1C1D004B4D8F /* Search */,
+				2AB1560B1D6FADE600342D2C /* Purchase */,
 				2A1CF2521D6C1B6D004B4D8F /* Profile */,
 				2A1CF2141D6B8460004B4D8F /* ViewController.swift */,
 				2A1CF2191D6B8460004B4D8F /* Assets.xcassets */,
 				2A1CF21B1D6B8460004B4D8F /* LaunchScreen.storyboard */,
 				2A1CF21E1D6B8460004B4D8F /* Info.plist */,
 				2A4DFF3A1D6C2EA3008FE51F /* Third Party */,
-				2A96D6271D6D7D16008C8E4D /* club.jpg */,
+				2AB155FD1D6F7BE400342D2C /* Resrc */,
 			);
 			path = "iOS Starter";
 			sourceTree = "<group>";
@@ -219,6 +248,8 @@
 			children = (
 				2A1CF25C1D6C1EC2004B4D8F /* ProfileNavigationController.swift */,
 				2A1CF24A1D6BCE7D004B4D8F /* ProfileTableViewController.swift */,
+				2A348EBC1D70134600D9BAA9 /* ProfileHeaderView.swift */,
+				2AC5EC1C1D701C6B0054A582 /* ProfileSettingCell.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -228,6 +259,9 @@
 			children = (
 				2A1CF25A1D6C1E79004B4D8F /* SearchNavigationController.swift */,
 				2A1CF2531D6C1C08004B4D8F /* SearchViewController.swift */,
+				2AB155FF1D6F951E00342D2C /* CategoryCollectionCell.swift */,
+				2AD1F3D71D6EB2FA009C2AA0 /* SearchResultsController.swift */,
+				2AB156071D6FA2AD00342D2C /* SearchTableCell.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -258,6 +292,54 @@
 				2A36F5C01D6DA6CE00BD6739 /* LureLocationCell.swift */,
 			);
 			name = Lure;
+			sourceTree = "<group>";
+		};
+		2AB155FD1D6F7BE400342D2C /* Resrc */ = {
+			isa = PBXGroup;
+			children = (
+				2AB155FE1D6F7BFB00342D2C /* Images */,
+			);
+			name = Resrc;
+			sourceTree = "<group>";
+		};
+		2AB155FE1D6F7BFB00342D2C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2AC5EC261D7020D70054A582 /* Tabs */,
+				2AB156031D6F9CBC00342D2C /* Categories */,
+				2A96D6271D6D7D16008C8E4D /* club.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		2AB156031D6F9CBC00342D2C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2AB156011D6F9CB900342D2C /* restaurants.jpg */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		2AB1560B1D6FADE600342D2C /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				2AB1560C1D6FB0A000342D2C /* PurchaseNavigationController.swift */,
+				2AB156091D6FADE000342D2C /* PurchaseListViewController.swift */,
+				2AB1560E1D6FB14500342D2C /* PurchaseCell.swift */,
+				2A7E3F951D6FBA400089264E /* PurchaseDetailViewController.swift */,
+			);
+			name = Purchase;
+			sourceTree = "<group>";
+		};
+		2AC5EC261D7020D70054A582 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				2AC5EC271D70223C0054A582 /* profile@2x.png */,
+				2AC5EC291D7022400054A582 /* purchases@2x.png */,
+				2AC5EC2B1D7022450054A582 /* discover@2x.png */,
+				2AC5EC2D1D70224B0054A582 /* search@2x.png */,
+			);
+			name = Tabs;
 			sourceTree = "<group>";
 		};
 		31C2B0E256281A039D40F802 /* Frameworks */ = {
@@ -389,8 +471,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A1CF21D1D6B8460004B4D8F /* LaunchScreen.storyboard in Resources */,
+				2AC5EC2A1D7022400054A582 /* purchases@2x.png in Resources */,
 				2A96D6281D6D7D16008C8E4D /* club.jpg in Resources */,
+				2AB156021D6F9CB900342D2C /* restaurants.jpg in Resources */,
 				2A1CF21A1D6B8460004B4D8F /* Assets.xcassets in Resources */,
+				2AC5EC281D70223C0054A582 /* profile@2x.png in Resources */,
+				2AC5EC2C1D7022450054A582 /* discover@2x.png in Resources */,
+				2AC5EC2E1D70224B0054A582 /* search@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,16 +635,25 @@
 				2A36F5BF1D6DA6C500BD6739 /* LureDetailCell.swift in Sources */,
 				2A96D6301D6D964E008C8E4D /* ModalNavigationController.swift in Sources */,
 				2A96D62D1D6D947E008C8E4D /* LureDetailViewController.swift in Sources */,
+				2AD1F3D81D6EB2FA009C2AA0 /* SearchResultsController.swift in Sources */,
+				2AB1560F1D6FB14500342D2C /* PurchaseCell.swift in Sources */,
 				2A36F5C11D6DA6CE00BD6739 /* LureLocationCell.swift in Sources */,
 				2A1CF2471D6BC96F004B4D8F /* AppTabBarController.swift in Sources */,
 				2A36F5C31D6DABA200BD6739 /* LureTableView.swift in Sources */,
+				2AB156081D6FA2AD00342D2C /* SearchTableCell.swift in Sources */,
+				2A348EBD1D70134600D9BAA9 /* ProfileHeaderView.swift in Sources */,
+				2AB1560A1D6FADE000342D2C /* PurchaseListViewController.swift in Sources */,
 				2A1CF2151D6B8460004B4D8F /* ViewController.swift in Sources */,
 				2A4DFF391D6C2E7E008FE51F /* ACTabScrollView.swift in Sources */,
+				2AC5EC1D1D701C6B0054A582 /* ProfileSettingCell.swift in Sources */,
 				2A1CF2491D6BCB53004B4D8F /* DiscoverListViewController.swift in Sources */,
 				2A1CF25D1D6C1EC2004B4D8F /* ProfileNavigationController.swift in Sources */,
 				2A1CF24D1D6BD428004B4D8F /* DiscoverCell.swift in Sources */,
+				2A7E3F961D6FBA400089264E /* PurchaseDetailViewController.swift in Sources */,
 				2A1CF2591D6C1D61004B4D8F /* DiscoverNavigationController.swift in Sources */,
 				2A1CF2131D6B8460004B4D8F /* AppDelegate.swift in Sources */,
+				2AB156001D6F951E00342D2C /* CategoryCollectionCell.swift in Sources */,
+				2AB1560D1D6FB0A000342D2C /* PurchaseNavigationController.swift in Sources */,
 				2A1CF25B1D6C1E79004B4D8F /* SearchNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
