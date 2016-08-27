@@ -25,22 +25,18 @@ enum Endpoint: URLRequestConvertible {
 
     // MARK:- Auth
     case authUser(fbAccessToken: String)
-    case authBiz(username: String, password: String)
 
     // MARK:- Biz
     case getBusinesses
     case getBusiness(id: Int)
     case searchBusiness(query: String)
-    case updateBusiness(id: Int, name: String, description: String, logoURL: String)
+    case getBusinessTransactions(id: String)
 
     // MARK:- Lures
     case getLures
     case getLure(id: Int)
     case getBizLures(bizID: Int)
     case searchLure(query: String)
-    case makeLure(title: String, description: String, location: String, startDate: NSDate, endDate: NSDate, target: [[String: AnyObject]])
-    case updateLure(id: Int, title: String, description: String, location: String, startDate: NSDate, endDate: NSDate, target: [[String: AnyObject]])
-    case deleteLure(id: Int)
 
     // MARK:- Choice for Poll
     // pass nil to choice to clear previous selections
@@ -50,10 +46,6 @@ enum Endpoint: URLRequestConvertible {
     // MARK:- Polls
     case getBizPoll(bizID: Int, pollID: Int)
     case getBizPolls(bizID: Int)
-    case createPoll(bizID: Int, title: String, startDate: NSDate, endDate: NSDate, choices: [String])
-    case deletePoll(bizID: Int, pollID: Int)
-    case updatePoll(bizID: Int, pollID: Int, title: String, startDate: NSDate, endDate: NSDate, choices: [String])
-
 
     // MARK: - Endpoints params
     var URLRequest: NSMutableURLRequest {
@@ -65,33 +57,21 @@ enum Endpoint: URLRequestConvertible {
         switch self {
         case let .authUser(accessToken):
             param = ["facebook_access_token": accessToken]
-        case let .authBiz(username, password):
-            param = ["username": username, "password": password]
+
         case .getBusinesses, .getBusiness:
             break
 
         case .searchBusiness(let query):
             param = ["query": query]
 
-        case let .updateBusiness(_, name, description, logoURL):
-            param = ["name": name, "description": description, "logoURL": logoURL]
+        case .getBusinessTransactions:
+            break
 
         case .getLures, getLure, .getBizLures:
             break
 
         case .searchLure(let query):
             param = ["query": query]
-
-        case let .makeLure(title, description, location, startDate, endDate, target):
-            param = ["title": title, "description": description, "location": location, "startDate": startDate, "endDate": endDate, "target": target]
-
-
-        case let .updateLure(_, title, description, location, startDate, endDate, target):
-            param = ["title": title, "description": description, "location": location, "startDate": startDate, "endDate": endDate, "target": target]
-
-        case .deleteLure:
-            break
-
 
         case let .submitChoiceForPoll(_, _, choice):
             if let choice = choice {
@@ -103,17 +83,9 @@ enum Endpoint: URLRequestConvertible {
         case .getBizPoll, getBizPolls:
             break
 
-        case let .createPoll(_, title, startDate, endDate, choices):
-            param = ["title": title, "startDate": startDate, "endDate": endDate, "choices": choices]
-
-        case .deletePoll:
-            break
-
-        case let .updatePoll(_, _, title, startDate, endDate, choices):
-            param = ["title": title, "startDate": startDate, "endDate": endDate, "choices": choices]
         }
 
-        if method == .POST || method == .PUT {
+        if method == .POST {
             return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: param).0
         } else {
             return Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: param).0
@@ -124,16 +96,14 @@ enum Endpoint: URLRequestConvertible {
     var method: Alamofire.Method {
         switch self {
         case .authUser,
-             .authBiz,
-             .makeLure,
-             .submitChoiceForPoll,
-             .createPoll:
+             .submitChoiceForPoll:
 
             return .POST
 
         case .getBusinesses,
              .getBusiness,
              .searchBusiness,
+             .getBusinessTransactions,
              .getLure,
              .getBizLures,
              .getLures,
@@ -142,15 +112,6 @@ enum Endpoint: URLRequestConvertible {
              .getBizPolls:
 
             return .GET
-
-        case .updateBusiness,
-             .updateLure,
-             .updatePoll:
-            return .PUT
-
-        case .deleteLure,
-             .deletePoll:
-            return .DELETE
         }
     }
 
@@ -158,27 +119,46 @@ enum Endpoint: URLRequestConvertible {
     var path: String {
         switch self {
         case .authUser: return "/auth/user"
-        case .authBiz: return "/auth/business"
-        case .getBusinesses: return "/getBusinesses"
+        case .getBusinesses: return "/businesses"
         case .getBusiness(let id): return "/business/\(id)"
         case .searchBusiness: return "/business/search"
-        case .updateBusiness(let id): return "/businesses/\(id)"
+
+        case .getBusinessTransactions(let bizID): return "/businesses/\(bizID)/transactions"
 
         case .getLure(let id): return "/lure/\(id)"
         case .getBizLures(let bizID): return "/businesses/\(bizID)/lures"
         case .getLures: return "/lures"
         case .searchLure: return "/lures/search"
-        case .makeLure: return "/lure"
-        case let .updateLure(id, _, _, _, _, _, _): return "/lure/\(id)"
-        case let .deleteLure(id): return "/lure/\(id)"
 
         case let .submitChoiceForPoll(bizID, pollID, _): return "/businesses/\(bizID)/polls/\(pollID)"
 
         case let .getBizPoll(bizID, pollID): return "/businesses/\(bizID)/polls/\(pollID)"
         case let .getBizPolls(bizID): return "/businesses/\(bizID)/polls"
-        case let .createPoll(bizID, _, _, _, _): return "/businesses/\(bizID)/polls"
-        case let .updatePoll(bizID, pollID, _, _, _, _): return "/businesses/\(bizID)/polls/\(pollID)"
-        case let .deletePoll(bizID, pollID): return "/businesses/\(bizID)/polls/\(pollID)"
+        }
+    }
+}
+
+// MARK: - Alamofire
+extension Request {
+    typealias ResponseData = AnyObject
+    typealias SuccessHandler = (ResponseData) -> ()
+    typealias FailureHandler = (NSError) -> ()
+    func responseJSON(successHandler successHandler: SuccessHandler?, failureHandler: FailureHandler?) {
+
+        responseJSON { response in
+            switch response.result {
+            case .Success(let data):
+                guard let successHandler = successHandler else {
+                    return
+                }
+                successHandler(data)
+
+            case .Failure(let error):
+                guard let failureHandler = failureHandler else {
+                    return
+                }
+                failureHandler(error)
+            }
         }
     }
 }
