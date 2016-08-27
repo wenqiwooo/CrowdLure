@@ -19,7 +19,7 @@ import SwiftyJSON
  */
 enum Endpoint: URLRequestConvertible {
     // update with your end point
-    static let baseURL = "https://testing.com/api/"
+    static let baseURL = "https://sheltered-bayou-29760.herokuapp.com/"
 
     // MARK: Endpoints
 
@@ -167,7 +167,7 @@ enum Endpoint: URLRequestConvertible {
         case .getLure(let id): return "/lure/\(id)"
         case .getBizLures(let bizID): return "/businesses/\(bizID)/lures"
         case .getLures: return "/lures"
-        case .searchLure: return "lure/search/"
+        case .searchLure: return "/lures/search"
         case .makeLure: return "/lure"
         case let .updateLure(id, _, _, _, _, _, _): return "/lure/\(id)"
         case let .deleteLure(id): return "/lure/\(id)"
