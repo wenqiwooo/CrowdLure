@@ -19,8 +19,8 @@ import SwiftyJSON
  */
 enum Endpoint: URLRequestConvertible {
     // update with your end point
-    static let baseURL = "https://sheltered-bayou-29760.herokuapp.com/"
-    
+    static let baseURL = "https://sheltered-bayou-29760.herokuapp.com"
+
     // MARK: Endpoints
 
     // MARK:- Auth
@@ -30,22 +30,21 @@ enum Endpoint: URLRequestConvertible {
     case getBusinesses
     case getBusiness(id: Int)
     case searchBusiness(query: String)
-    case getBusinessTransactions(id: String)
 
     // MARK:- Lures
     case getLures
     case getLure(id: Int)
-    case getBizLures(bizID: Int)
+    case getBusinessLures(bizID: Int)
     case searchLure(query: String)
 
     // MARK:- Choice for Poll
     // pass nil to choice to clear previous selections
     // this is for customers to use
-    case submitChoiceForPoll(bizID: Int, pollID: Int, choice: Int?)
+    case submitChoiceForPoll(bizID: Int, pollID: Int, choiceID: Int?)
 
     // MARK:- Polls
-    case getBizPoll(bizID: Int, pollID: Int)
-    case getBizPolls(bizID: Int)
+    case getBusinessPoll(bizID: Int, pollID: Int)
+    case getBusinessPolls(bizID: Int)
 
     // MARK: - Endpoints params
     var URLRequest: NSMutableURLRequest {
@@ -68,10 +67,7 @@ enum Endpoint: URLRequestConvertible {
         case .searchBusiness(let query):
             param = ["query": query]
 
-        case .getBusinessTransactions:
-            break
-
-        case .getLures, getLure, .getBizLures:
+        case .getLures, getLure, .getBusinessLures:
             break
 
         case .searchLure(let query):
@@ -84,7 +80,7 @@ enum Endpoint: URLRequestConvertible {
                 break
             }
 
-        case .getBizPoll, getBizPolls:
+        case .getBusinessPoll, getBusinessPolls:
             break
 
         }
@@ -107,13 +103,12 @@ enum Endpoint: URLRequestConvertible {
         case .getBusinesses,
              .getBusiness,
              .searchBusiness,
-             .getBusinessTransactions,
              .getLure,
-             .getBizLures,
+             .getBusinessLures,
              .getLures,
              .searchLure,
-             .getBizPoll,
-             .getBizPolls:
+             .getBusinessPoll,
+             .getBusinessPolls:
 
             return .GET
         }
@@ -124,20 +119,18 @@ enum Endpoint: URLRequestConvertible {
         switch self {
         case .authUser: return "/auth/user"
         case .getBusinesses: return "/businesses"
-        case .getBusiness(let id): return "/business/\(id)"
-        case .searchBusiness: return "/business/search"
+        case .getBusiness(let id): return "/businesses/\(id)"
+        case .searchBusiness: return "/businesses/search"
 
-        case .getBusinessTransactions(let bizID): return "/businesses/\(bizID)/transactions"
-
-        case .getLure(let id): return "/lure/\(id)"
-        case .getBizLures(let bizID): return "/businesses/\(bizID)/lures"
+        case .getLure(let id): return "/lures/\(id)"
         case .getLures: return "/lures"
+        case .getBusinessLures(let bizID): return "/businesses/\(bizID)/lures"
         case .searchLure: return "/lures/search"
 
-        case let .submitChoiceForPoll(bizID, pollID, _): return "/businesses/\(bizID)/polls/\(pollID)"
+        case let .submitChoiceForPoll(bizID, pollID, _): return "/businesses/\(bizID)/polls/\(pollID)/choice"
 
-        case let .getBizPoll(bizID, pollID): return "/businesses/\(bizID)/polls/\(pollID)"
-        case let .getBizPolls(bizID): return "/businesses/\(bizID)/polls"
+        case let .getBusinessPoll(bizID, pollID): return "/businesses/\(bizID)/polls/\(pollID)"
+        case let .getBusinessPolls(bizID): return "/businesses/\(bizID)/polls"
         }
     }
 }
