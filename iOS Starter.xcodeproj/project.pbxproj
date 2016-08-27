@@ -54,6 +54,7 @@
 		72E25387698953A63F84D3E0 /* Pods_iOS_StarterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2507375A4F5671ACDCAA172 /* Pods_iOS_StarterUITests.framework */; };
 		74532A8F1D6C21FE001D5FBF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74532A8E1D6C21FE001D5FBF /* Endpoint.swift */; };
 		74E4C5051D71EFEB00E37828 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E4C5041D71EFEB00E37828 /* Extensions.swift */; };
+		74FDA3BF1D71FFE600BA2470 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDA3BE1D71FFE600BA2470 /* Constants.swift */; };
 		F8C8231F2C686E29ED6CA5AE /* Pods_iOS_StarterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EF532D1D184316E3B81D52 /* Pods_iOS_StarterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +131,7 @@
 		666E6E5B96A83EE566F21DF6 /* Pods-iOS StarterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS StarterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS StarterUITests/Pods-iOS StarterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		74532A8E1D6C21FE001D5FBF /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		74E4C5041D71EFEB00E37828 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		74FDA3BE1D71FFE600BA2470 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9CE77272967374A3147CA839 /* Pods-iOS Starter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Starter.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS Starter/Pods-iOS Starter.release.xcconfig"; sourceTree = "<group>"; };
 		B2AFD59D18288522720D0C92 /* Pods-iOS StarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS StarterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS StarterTests/Pods-iOS StarterTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2507375A4F5671ACDCAA172 /* Pods_iOS_StarterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_StarterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +220,7 @@
 				2A1CF2141D6B8460004B4D8F /* ViewController.swift */,
 				74532A8E1D6C21FE001D5FBF /* Endpoint.swift */,
 				74E4C5041D71EFEB00E37828 /* Extensions.swift */,
+				74FDA3BE1D71FFE600BA2470 /* Constants.swift */,
 				2A1CF2191D6B8460004B4D8F /* Assets.xcassets */,
 				2A1CF21E1D6B8460004B4D8F /* Info.plist */,
 				2A4DFF3A1D6C2EA3008FE51F /* Third Party */,
@@ -666,6 +669,7 @@
 				2A4DFF391D6C2E7E008FE51F /* ACTabScrollView.swift in Sources */,
 				2AC5EC1D1D701C6B0054A582 /* ProfileSettingCell.swift in Sources */,
 				2A1CF2491D6BCB53004B4D8F /* DiscoverListViewController.swift in Sources */,
+				74FDA3BF1D71FFE600BA2470 /* Constants.swift in Sources */,
 				2A1CF25D1D6C1EC2004B4D8F /* ProfileNavigationController.swift in Sources */,
 				2A1CF24D1D6BD428004B4D8F /* DiscoverCell.swift in Sources */,
 				2A7E3F961D6FBA400089264E /* PurchaseDetailViewController.swift in Sources */,
