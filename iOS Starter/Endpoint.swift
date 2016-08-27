@@ -24,7 +24,7 @@ enum Endpoint: URLRequestConvertible {
     // MARK: Endpoints
 
     // MARK:- Auth
-    case authUser(accessToken: String)
+    case authUser(fbAccessToken: String)
     case authBiz(username: String, password: String)
 
     // MARK:- Biz
