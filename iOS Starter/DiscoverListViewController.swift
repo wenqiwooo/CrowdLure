@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 extension UIViewController {
     func presentModalView(vc:UIViewController, animated: Bool = true) {
@@ -53,6 +55,26 @@ class DiscoverListViewController: UIViewController, UITableViewDelegate, UITable
         self.view.addSubview(self.discoverTabScrollView)
         
         self.setupLayoutConstraints()
+
+        print("init")
+        let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        delegate.hashToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTEsInR5cGUiOiJVc2VyIn0.LvykZ9svrudRAGBFYZxfrxY3f7hSBxh3MRUE_ZeVEo8"
+
+
+//        let foo = request(Endpoint.authUser(fbAccessToken: "EAAZAOSWC8L9kBACZCOBSf4cM1ibVHhmE6ROZC2Wy82tRxC6yOVMdtaoTjuPOhRcYEHrfVSv12fKoyy2QaYf8ToYjSYyIjd3A8YR1aiZBfeZAWmX4KgKbMbE8DSdafuuUy3JVagJOj5XqTo2NZCoTBKt8ZAZBY8QQLabgJBi8aLJ8kAZDZD"))
+//        let foo = request(Endpoint.getBusinesses)
+//        let foo = request(Endpoint.getBusiness(id: 3))
+//        let foo = request(Endpoint.searchBusiness(query: ""))
+//        let foo = request(Endpoint.searchLure(query: "a"))
+//        let foo = request(Endpoint.getBusinessPoll(bizID: 1, pollID: 2))
+//        let foo = request(Endpoint.submitChoiceForPoll(bizID: 1, pollID: 2, choiceID: 4))
+//        foo.responseJSON(successHandler: { rawResp in
+//            let resp = JSON(rawResp)
+//            print(resp)
+//            }, failureHandler: { error in
+//                print(error)
+//        })
+//        print(foo.debugDescription)
     }
     
     func setupLayoutConstraints() {
