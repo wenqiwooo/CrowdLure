@@ -12,7 +12,6 @@ class AppTabBarController: UITabBarController {
     
     init() {
         super.init(nibName: nil, bundle: nil)
-        self.tabBar.autoresizesSubviews = false
         self.tabBar.clipsToBounds = true
     }
     

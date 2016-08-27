@@ -26,11 +26,20 @@ class SearchViewController: UICollectionViewController {
     var searchController: UISearchController!
     var searchResultsController: SearchResultsController!
 
+    private let minInterItemSpacing: CGFloat = 10
+    private let itemWidth: CGFloat = 100
+    private let itemHeight: CGFloat = 100
+    private let numColumns = 3
+    private let sectionSideInsetWidth: CGFloat = 10
+
     init() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .Vertical
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        layout.sectionInset = UIEdgeInsets(top: 10, left: sectionSideInsetWidth, bottom: 10, right: sectionSideInsetWidth)
+        layout.minimumInteritemSpacing = minInterItemSpacing
         super.init(collectionViewLayout: layout)
+
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(deviceOrientationDidChange), name: UIDeviceOrientationDidChangeNotification, object: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -67,19 +76,27 @@ class SearchViewController: UICollectionViewController {
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let len = (UIScreen.mainScreen().bounds.width - 4 * 10) / 3
-        return CGSize(width: len, height: len)
+        let screenWidth = (UIScreen.mainScreen().bounds.width)
+        let viewWidth = screenWidth - sectionSideInsetWidth * 2
+        let rowContentWidth = viewWidth - (CGFloat(numColumns) - 1) * minInterItemSpacing
+        let itemWidth = floor(rowContentWidth / CGFloat(numColumns))
+
+        return CGSize(width: itemWidth, height: itemWidth)
     }
-    
+
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CategoryCell", forIndexPath: indexPath) as! CategoryCollectionCell
         cell.backgroundColor = UIColor.greenColor()
         cell.updateUI(self.categories[indexPath.row])
+        
         return cell
     }
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
     }
-}
 
+    func deviceOrientationDidChange() {
+        collectionView?.collectionViewLayout.invalidateLayout()
+    }
+}
