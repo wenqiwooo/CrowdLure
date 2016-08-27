@@ -23,6 +23,13 @@ extension UIViewController {
 
 class DiscoverListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ACTabScrollViewDelegate, ACTabScrollViewDataSource {
     
+    let pollData = [
+        ["Philz Coffee", "What flavour of coffee would you like to see?", 5, 12],
+        ["BMW", "What would be a good incentive to get a BMW?", 3, 6],
+        ["Coca Cola", "Would a visit to our factory appeal to you?", 3, 12],
+        ["Waka Waka", "What lure should we have next for you?", 4, 24]
+    ]
+    
     private let discoverTabScrollView = ACTabScrollView()
     private let discoverTableView = UITableView()
     
@@ -137,6 +144,7 @@ class DiscoverListViewController: UIViewController, UITableViewDelegate, UITable
         discoverTableView.delegate = self
         discoverTableView.dataSource = self
         discoverTableView.registerClass(DiscoverCell.self, forCellReuseIdentifier: "DiscoverCell")
+        discoverTableView.registerClass(PollCell.self, forCellReuseIdentifier: "PollCell")
         return discoverTableView
     }
     
@@ -160,7 +168,7 @@ class DiscoverListViewController: UIViewController, UITableViewDelegate, UITable
             case .Favorites:
                 return 3
             case .Polls:
-                return 1
+                return self.pollData.count
             }
         }
         return 0
@@ -171,11 +179,18 @@ class DiscoverListViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if let discoverTableView = tableView as? DiscoverTableView where discoverTableView.category == .Polls {
+            return 160
+        }
         return 240
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if let discoverTableView = tableView as? DiscoverTableView {
+        let discoverTableView = tableView as! DiscoverTableView
+        if discoverTableView.category == .Polls {
+            let poll = self.pollData[indexPath.section]
+            return PollCell(bizName: poll[0] as! String, question: poll[1] as! String, choiceCount: poll[2] as! Int, answerCount: poll[3] as! Int)
+        } else {
             switch (discoverTableView.category) {
             case .Nearby:
                 break
@@ -186,8 +201,8 @@ class DiscoverListViewController: UIViewController, UITableViewDelegate, UITable
             case .Polls:
                 break
             }
+            return DiscoverCell()
         }
-        return DiscoverCell()
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

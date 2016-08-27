@@ -47,6 +47,8 @@
 		2AC5EC2A1D7022400054A582 /* purchases@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AC5EC291D7022400054A582 /* purchases@2x.png */; };
 		2AC5EC2C1D7022450054A582 /* discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AC5EC2B1D7022450054A582 /* discover@2x.png */; };
 		2AC5EC2E1D70224B0054A582 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AC5EC2D1D70224B0054A582 /* search@2x.png */; };
+		2AC5EC301D702E1D0054A582 /* PollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC5EC2F1D702E1D0054A582 /* PollCell.swift */; };
+		2AC5EC321D7042090054A582 /* PollFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC5EC311D7042090054A582 /* PollFormViewController.swift */; };
 		2AD1F3D81D6EB2FA009C2AA0 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD1F3D71D6EB2FA009C2AA0 /* SearchResultsController.swift */; };
 		72E25387698953A63F84D3E0 /* Pods_iOS_StarterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2507375A4F5671ACDCAA172 /* Pods_iOS_StarterUITests.framework */; };
 		F8C8231F2C686E29ED6CA5AE /* Pods_iOS_StarterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EF532D1D184316E3B81D52 /* Pods_iOS_StarterTests.framework */; };
@@ -116,6 +118,8 @@
 		2AC5EC291D7022400054A582 /* purchases@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purchases@2x.png"; sourceTree = "<group>"; };
 		2AC5EC2B1D7022450054A582 /* discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discover@2x.png"; sourceTree = "<group>"; };
 		2AC5EC2D1D70224B0054A582 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		2AC5EC2F1D702E1D0054A582 /* PollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollCell.swift; sourceTree = "<group>"; };
+		2AC5EC311D7042090054A582 /* PollFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollFormViewController.swift; sourceTree = "<group>"; };
 		2AD1F3D71D6EB2FA009C2AA0 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		31B628A7197899F47904D70B /* Pods-iOS Starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Starter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS Starter/Pods-iOS Starter.debug.xcconfig"; sourceTree = "<group>"; };
 		53DB2CE3B0E5B60BB54720BB /* Pods-iOS StarterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS StarterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS StarterUITests/Pods-iOS StarterUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 				2A1CF24C1D6BD428004B4D8F /* DiscoverCell.swift */,
 				2A1CF24E1D6BD54D004B4D8F /* DiscoverCellDataProvider.swift */,
 				2A91AD241D6C364700850321 /* DiscoverTabView.swift */,
+				2AC5EC2F1D702E1D0054A582 /* PollCell.swift */,
+				2AC5EC311D7042090054A582 /* PollFormViewController.swift */,
 			);
 			name = Discover;
 			sourceTree = "<group>";
@@ -626,6 +632,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A91AD251D6C364700850321 /* DiscoverTabView.swift in Sources */,
+				2AC5EC321D7042090054A582 /* PollFormViewController.swift in Sources */,
 				2A1CF2571D6C1CEA004B4D8F /* AppNavigationController.swift in Sources */,
 				2A1CF24F1D6BD54D004B4D8F /* DiscoverCellDataProvider.swift in Sources */,
 				2A1CF24B1D6BCE7D004B4D8F /* ProfileTableViewController.swift in Sources */,
@@ -644,6 +651,7 @@
 				2A348EBD1D70134600D9BAA9 /* ProfileHeaderView.swift in Sources */,
 				2AB1560A1D6FADE000342D2C /* PurchaseListViewController.swift in Sources */,
 				2A1CF2151D6B8460004B4D8F /* ViewController.swift in Sources */,
+				2AC5EC301D702E1D0054A582 /* PollCell.swift in Sources */,
 				2A4DFF391D6C2E7E008FE51F /* ACTabScrollView.swift in Sources */,
 				2AC5EC1D1D701C6B0054A582 /* ProfileSettingCell.swift in Sources */,
 				2A1CF2491D6BCB53004B4D8F /* DiscoverListViewController.swift in Sources */,
