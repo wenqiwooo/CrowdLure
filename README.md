@@ -1,4 +1,3 @@
-# Install Dependencies
-```
-pod install
-```
+#Booster
+
+A platform to crowd source for great deals.
